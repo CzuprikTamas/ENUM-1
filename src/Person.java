@@ -1,14 +1,17 @@
 public class Person {
     private String name;
-    private String gender;
+    private Gender gender;
     private EyeColor eyeColor = EyeColor.BLUE;
+    private Country country = Country.SWEDISH;
 
     public Person(){}
 
-    public Person(String name, String gender, EyeColor eyeColor) {
+
+    public Person(String name, Gender gender, EyeColor eyeColor, Country country) {
         this.name = name;
         this.gender = gender;
         this.eyeColor = eyeColor;
+        this.country = country;
     }
 
     public String getName() {
@@ -19,11 +22,11 @@ public class Person {
         this.name = name;
     }
 
-    public String getGender() {
+    public Gender getGender() {
         return gender;
     }
 
-    public void setGender(String gender) {
+    public void setGender(Gender gender) {
         this.gender = gender;
     }
 
